@@ -1,38 +1,25 @@
 package hexlet.code;
 
+import hexlet.code.games.*;
+
 import java.util.Scanner;
 
 public class App {
-    public static String userName;
     public static void main(String[] args) {
-        Scanner scanner  = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
         System.out.println("""
                 Please enter the game number and press Enter.
                 1 - Greet
                 2 - Even
+                3 - Calc
                 0 - Exit""");
         var selected = scanner.next();
         System.out.println("Your choice: " + selected + "\n");
 
         switch (selected) {
-            case "1":
-                greeting();
-                break;
-            case "2":
-                greeting();
-                Even.isEvenGameStart();
-                break;
-            default:
-                return;
+            case "1" -> Engine.greeting();
+            case "2" -> Even.startGame();
+            case "3" -> Calc.startGame();
         }
-    }
-
-    public static void greeting() {
-        Scanner scanner  = new Scanner(System.in);
-
-        System.out.println("Welcome to the Brain Games!");
-        System.out.print("May I have your name? ");
-        userName = scanner.next();
-        System.out.println("Hello, " + userName + "!");
     }
 }
