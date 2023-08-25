@@ -7,7 +7,7 @@
 
 #### [*— Definition of an even number*](#even-game-example)
 #### [*— Calculator. Arithmetic expressions to be evaluated*](#calc-game-example)
-#### *— Finding the Greatest Common Divisor*
+#### [*— Finding the Greatest Common Divisor*](#gcd-game-example)
 #### *— Progression. Finding missing numbers in a sequence of numbers*
 #### *— Prime number definition*
 ##
@@ -20,4 +20,9 @@ https://asciinema.org/a/E6FLFtKBnuVW49CilM1gKRaRh
 ### Calc Game Example
 ```
 https://asciinema.org/a/FdjdZgsY9aRckIJVKzMW4NCoK
+```
+
+### GCD Game Example
+```
+https://asciinema.org/a/TkyzfeIMpOiwdkvI0DtyiFKz2
 ```
