@@ -12,6 +12,7 @@ public class App {
                 1 - Greet
                 2 - Even
                 3 - Calc
+                4 - GCD
                 0 - Exit""");
         var selected = scanner.next();
         System.out.println("Your choice: " + selected + "\n");
@@ -20,6 +21,7 @@ public class App {
             case "1" -> Engine.greeting();
             case "2" -> Even.startGame();
             case "3" -> Calc.startGame();
+            case "4" -> GCD.startGame();
         }
     }
 }
