@@ -19,5 +19,5 @@ https://asciinema.org/a/E6FLFtKBnuVW49CilM1gKRaRh
 
 ### Calc Game Example
 ```
-[https://asciinema.org/a/E6FLFtKBnuVW49CilM1gKRaRh](https://asciinema.org/a/FdjdZgsY9aRckIJVKzMW4NCoK)https://asciinema.org/a/FdjdZgsY9aRckIJVKzMW4NCoK
+https://asciinema.org/a/FdjdZgsY9aRckIJVKzMW4NCoK
 ```
