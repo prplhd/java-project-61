@@ -3,8 +3,10 @@ package hexlet.code.games;
 import hexlet.code.Engine;
 
 public class Progression {
-
-    private static final String[] CORRECT_ANSWERS = new String[3];
+    private static final int QUESTIONS_ARRAY_SIZE = 3;
+    private static final int RANGE_OF_NUMBERS = 100;
+    private static final int UPPER_RANGE = 7;
+    private static final String[] CORRECT_ANSWERS = new String[QUESTIONS_ARRAY_SIZE];
 
     public static void startGame() {
         var questions = getQuestions();
@@ -13,12 +15,12 @@ public class Progression {
     }
 
     public static String[] getQuestions() {
-        var questions = new String[3];
+        var questions = new String[QUESTIONS_ARRAY_SIZE];
         for (var i = 0; i < questions.length; i++) {
-            var progression = new String[7];
-            var startOfProgression = (int) (Math.random() * 100);
-            var step = 2 + (int) (Math.random() * (6 - 2));
-            var indexOfAnswer = (int) (Math.random() * 7);
+            var progression = new String[UPPER_RANGE];
+            var startOfProgression = (int) (Math.random() * RANGE_OF_NUMBERS);
+            var step = 2 + (int) (Math.random() * (UPPER_RANGE - 1 - 2));
+            var indexOfAnswer = (int) (Math.random() * UPPER_RANGE);
 
             progression[0] = Integer.toString(startOfProgression);
 
