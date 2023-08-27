@@ -9,7 +9,7 @@
 #### [*— Calculator. Arithmetic expressions to be evaluated*](#calc-game-example)
 #### [*— Finding the Greatest Common Divisor*](#gcd-game-example)
 #### [*— Progression. Finding missing numbers in a sequence of numbers*](#progression-game-example)
-#### *— Prime number definition*
+#### [*— Prime number definition*](#prime-game-example)
 ##
 
 ### Even Game Example
@@ -30,4 +30,9 @@ https://asciinema.org/a/TkyzfeIMpOiwdkvI0DtyiFKz2
 ### Progression Game Example
 ```
 https://asciinema.org/a/6uarwXH2JKfBLaSfJpHd07tvE
+```
+
+### Prime Game Example
+```
+https://asciinema.org/a/tpMRTYMguLMCwADvoU3cBTC9k
 ```
