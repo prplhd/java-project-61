@@ -4,12 +4,12 @@ import hexlet.code.Engine;
 
 public class Progression {
 
-    private static final String[] correctAnswers = new String[3];
+    private static final String[] CORRECT_ANSWERS = new String[3];
 
     public static void startGame() {
         var questions = getQuestions();
         var description = "What number is missing in the progression?";
-        Engine.generateGame(description, questions, correctAnswers);
+        Engine.generateGame(description, questions, CORRECT_ANSWERS);
     }
 
     public static String[] getQuestions() {
@@ -26,7 +26,7 @@ public class Progression {
                 progression[j] = Integer.toString(Integer.parseInt(progression[j - 1]) + step);
             }
 
-            correctAnswers[i] = progression[indexOfAnswer];
+            CORRECT_ANSWERS[i] = progression[indexOfAnswer];
             progression[indexOfAnswer] = "..";
             questions[i] = String.join(" ", progression);
         }

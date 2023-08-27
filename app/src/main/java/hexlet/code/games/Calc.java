@@ -4,11 +4,11 @@ import hexlet.code.Engine;
 
 public class Calc {
 
-    private static final String[] correctAnswers = new String[3];
+    private static final String[] CORRECT_ANSWERS = new String[3];
     public static void startGame() {
         var questions = getQuestions();
         var description = "What is the result of the expression?";
-        Engine.generateGame(description, questions, correctAnswers);
+        Engine.generateGame(description, questions, CORRECT_ANSWERS);
     }
 
     public static String[] getQuestions() {
@@ -21,16 +21,17 @@ public class Calc {
             switch (sign) {
                 case 1 -> {
                     questions[i] = int1 + " + " + int2;
-                    correctAnswers[i] = Integer.toString(int1 + int2);
+                    CORRECT_ANSWERS[i] = Integer.toString(int1 + int2);
                 }
                 case 2 -> {
                     questions[i] = int1 + " - " + int2;
-                    correctAnswers[i] = Integer.toString(int1 - int2);
+                    CORRECT_ANSWERS[i] = Integer.toString(int1 - int2);
                 }
                 case 3 -> {
                     questions[i] = int1 + " * " + int2;
-                    correctAnswers[i] = Integer.toString(int1 * int2);
+                    CORRECT_ANSWERS[i] = Integer.toString(int1 * int2);
                 }
+                default -> System.out.println("Something wrong: " + sign + " not expected.");
             }
         }
 

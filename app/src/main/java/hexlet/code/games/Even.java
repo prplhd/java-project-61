@@ -4,11 +4,11 @@ import hexlet.code.Engine;
 
 public class Even {
 
-    private static final String[] correctAnswers = new String[3];
+    private static final String[] CORRECT_ANSWERS = new String[3];
     public static void startGame() {
         var questions = getQuestions();
         var description = "Answer 'yes' if the number is even, otherwise answer 'no'.";
-        Engine.generateGame(description, questions, correctAnswers);
+        Engine.generateGame(description, questions, CORRECT_ANSWERS);
     }
 
     public static String[] getQuestions() {
@@ -17,7 +17,7 @@ public class Even {
         for (var i = 0; i < questions.length; i++) {
             var number = (int) (Math.random() * 100);
             questions[i] = Integer.toString(number);
-            correctAnswers[i] = number % 2 == 0 ? "yes" : "no";
+            CORRECT_ANSWERS[i] = number % 2 == 0 ? "yes" : "no";
         }
 
         return questions;

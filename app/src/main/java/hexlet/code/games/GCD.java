@@ -4,11 +4,11 @@ import hexlet.code.Engine;
 
 public class GCD {
 
-    private static final String[] correctAnswers = new String[3];
+    private static final String[] CORRECT_ANSWERS = new String[3];
     public static void startGame() {
         var questions = getQuestions();
         var description = "Find the greatest common divisor of given numbers.";
-        Engine.generateGame(description, questions, correctAnswers);
+        Engine.generateGame(description, questions, CORRECT_ANSWERS);
     }
 
     public static String[] getQuestions() {
@@ -17,7 +17,7 @@ public class GCD {
             var int1 = (int) (Math.random() * 100);
             var int2 = (int) (Math.random() * 100);
             questions[i] = int1 + " " + int2;
-            correctAnswers[i] = Integer.toString(gcd(int1, int2));
+            CORRECT_ANSWERS[i] = Integer.toString(gcd(int1, int2));
         }
 
         return questions;

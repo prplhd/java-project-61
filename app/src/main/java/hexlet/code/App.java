@@ -1,6 +1,10 @@
 package hexlet.code;
 
-import hexlet.code.games.*;
+import hexlet.code.games.Even;
+import hexlet.code.games.Calc;
+import hexlet.code.games.GCD;
+import hexlet.code.games.Progression;
+import hexlet.code.games.Prime;
 
 import java.util.Scanner;
 
@@ -26,6 +30,8 @@ public class App {
             case "4" -> GCD.startGame();
             case "5" -> Progression.startGame();
             case "6" -> Prime.startGame();
+            case "0" -> System.out.print("");
+            default -> System.out.println("Something wrong: " + selected + " not expected.");
         }
     }
 }
