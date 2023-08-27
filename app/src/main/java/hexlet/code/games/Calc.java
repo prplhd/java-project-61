@@ -17,22 +17,22 @@ public class Calc {
         for (var i = 0; i < questions.length; i++) {
             var int1 = ((int) (Math.random() * RANGE_OF_NUMBERS));
             var int2 = ((int) (Math.random() * RANGE_OF_NUMBERS));
-            var sign = 1 + (int) (Math.random() * (2 + 1));
+            var sign = (int) (Math.random() * 2);
 
             //var numOfSum = 1;
             //var numOfSub = 2;
             //var numOfMul = 3;
 
             switch (sign) {
-                case 1 -> {
+                case 0 -> {
                     questions[i] = int1 + " + " + int2;
                     CORRECT_ANSWERS[i] = Integer.toString(int1 + int2);
                 }
-                case 2 -> {
+                case 1 -> {
                     questions[i] = int1 + " - " + int2;
                     CORRECT_ANSWERS[i] = Integer.toString(int1 - int2);
                 }
-                case 3 -> {
+                case 2 -> {
                     questions[i] = int1 + " * " + int2;
                     CORRECT_ANSWERS[i] = Integer.toString(int1 * int2);
                 }
