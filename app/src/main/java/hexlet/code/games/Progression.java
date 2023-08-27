@@ -14,7 +14,7 @@ public class Progression {
 
     public static String[] getQuestions() {
         var questions = new String[3];
-        for (var i = 0; i < 3; i++) {
+        for (var i = 0; i < questions.length; i++) {
             var progression = new String[7];
             var startOfProgression = (int) (Math.random() * 100);
             var step = 2 + (int) (Math.random() * (6 - 2));

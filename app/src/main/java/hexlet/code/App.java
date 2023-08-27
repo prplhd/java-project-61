@@ -14,6 +14,7 @@ public class App {
                 3 - Calc
                 4 - GCD
                 5 - Progression
+                6 - Prime
                 0 - Exit""");
         var selected = scanner.next();
         System.out.println("Your choice: " + selected + "\n");
@@ -24,6 +25,7 @@ public class App {
             case "3" -> Calc.startGame();
             case "4" -> GCD.startGame();
             case "5" -> Progression.startGame();
+            case "6" -> Prime.startGame();
         }
     }
 }

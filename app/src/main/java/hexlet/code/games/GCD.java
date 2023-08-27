@@ -13,7 +13,7 @@ public class GCD {
 
     public static String[] getQuestions() {
         var questions = new String[3];
-        for (var i = 0; i < 3; i++) {
+        for (var i = 0; i < questions.length; i++) {
             var int1 = (int) (Math.random() * 100);
             var int2 = (int) (Math.random() * 100);
             questions[i] = int1 + " " + int2;
