@@ -19,10 +19,6 @@ public class Calc {
             var int2 = ((int) (Math.random() * RANGE_OF_NUMBERS));
             var sign = (int) (Math.random() * 2);
 
-            //var numOfSum = 1;
-            //var numOfSub = 2;
-            //var numOfMul = 3;
-
             switch (sign) {
                 case 0 -> {
                     questions[i] = int1 + " + " + int2;
