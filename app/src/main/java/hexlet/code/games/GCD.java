@@ -15,8 +15,8 @@ public class GCD {
     public static String[] getQuestions() {
         var questions = new String[QUESTIONS_ARRAY_SIZE];
         for (var i = 0; i < questions.length; i++) {
-            var int1 = (int) (Math.random() * RANGE_OF_NUMBERS);
-            var int2 = (int) (Math.random() * RANGE_OF_NUMBERS);
+            var int1 = 1 + (int) (Math.random() * RANGE_OF_NUMBERS - 1);
+            var int2 = 1 + (int) (Math.random() * RANGE_OF_NUMBERS - 1);
             questions[i] = int1 + " " + int2;
             CORRECT_ANSWERS[i] = Integer.toString(gcd(int1, int2));
         }
